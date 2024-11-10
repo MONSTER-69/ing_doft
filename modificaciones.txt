@@ -1,0 +1,9 @@
+
+-contenido princiapl 
+	contendra el aspecto principal de la pantalla de home, princiaplmente el contenidoPrincipalTerapeuta.js 
+	contendra todos los aspectos con los cuales la terapeuta puede usar, porque terapeuta tiene permisos 
+	sobre acciones que recepcionista no puede realizar. por ahora me sentrare en las opciones de un usuario
+	con la mayoria de los permisos. 
+
+	pongo esa visto en otro componente, por si quiero que en el home haya algunas otras opciones no afecten 
+	a los aspectos basciso de la interfaz con las que la terapeuta se comunica
