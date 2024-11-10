@@ -1,14 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import db from './database/db.js';
-import expedienteRoutes from './routes/routes.js';
+// import expedienteRoutes from './routes/routes.js';
+import generalRoutes from './routes/routes.js'
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-app.use('/expedientes', expedienteRoutes);
+// de api desplegamos todos las demas rutas
+app.use('/api', generalRoutes);
 
 try {
     db.authenticate();

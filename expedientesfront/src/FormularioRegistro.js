@@ -4,7 +4,7 @@ import DatePickerComponent from "./DatePickerComponent";
 import { useNavigate } from "react-router-dom";
 import axios from "axios"; 
 
-const URI = "http://localhost:3001/expedientes";
+const URI = "http://localhost:3001/api/expedientes";
 
 const QCHAT_test =
   "https://docs.google.com/forms/d/e/1FAIpQLSd9SgHqVPBoTbqz5ZQ6f9UDdIAJhSfoshkgFdRUjsYv0lYsnA/viewform";

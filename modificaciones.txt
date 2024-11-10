@@ -7,3 +7,18 @@
 
 	pongo esa visto en otro componente, por si quiero que en el home haya algunas otras opciones no afecten 
 	a los aspectos basciso de la interfaz con las que la terapeuta se comunica
+
+----------------------------------------------------------------------------------
+sabado 11 
+
+-en la caprtea de "Models"
+	se agregoarion 2 archivos .js, los cuales son los modelos para terapeuta, pacientes_terapeuta, por lo que
+tebenis los modelos por separado, para evitar posibles errores si se encoentraban en un solo documento. 
+
+
+-en app.js de node, se generalizo la ruta. 
+
+-router.js se modifico para que este sea general por lo que no esta sujeto a un solo modelo, dependiedo de la peticion
+que se solicite, tomara a un terapeuta, paciente o asociar un paciente con un terapeuta
+
+se agrego un documnetos en modelos "modelos.js" en el cual se va a centralizar los disitintos modelos que surgan. 
