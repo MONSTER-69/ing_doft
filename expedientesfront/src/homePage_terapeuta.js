@@ -14,6 +14,7 @@ const Home=()=>{
         <div>
 
             <div>
+                <p>orale</p>
             <TerapeutaView></TerapeutaView>
             </div>
         </div>
