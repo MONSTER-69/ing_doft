@@ -3,6 +3,7 @@ import TerapeutaModel from "../models/terapeutaModel.js";
 import Pacientes_terapeutaModel from "../models/Pacientes_terapeutaModel.js";
 import Models from "../models/modelos.js";
 import { Op } from "sequelize";
+import { query } from "express";
 
 // export const createExpediente = async (req, res) => {
 //     try {
@@ -53,7 +54,13 @@ export const handleRequest = async (req, res)=>{
 
         switch(method){
             case "GET":
-                result = id ? await Model.findOne({where: {[idField]:id}}): await Model.findAll();
+                if(req.query.condition && req.query.value){
+                    //filtrar por cualquier condicion espedicifia
+                    result = await Model.findAll({where : { [req.query.condition]: req.query.value}});
+                }else{
+                    result = id ? await Model.findOne({where: {[idField]:id}}): await Model.findAll();
+                }
+                
                 break;
             case "POST":
                 result=await Model.create(req.body);

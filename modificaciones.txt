@@ -22,3 +22,10 @@ tebenis los modelos por separado, para evitar posibles errores si se encoentraba
 que se solicite, tomara a un terapeuta, paciente o asociar un paciente con un terapeuta
 
 se agrego un documnetos en modelos "modelos.js" en el cual se va a centralizar los disitintos modelos que surgan. 
+
+-controller se preapara para poder ejecutar bajo ciertas condiciones poder mostrar los registros que cumplan con la 
+condicion
+
+
+-se agrgo al fornt para mostrar los datos del paciente, no es como lo queria pero ya se empeixza a aver algo mas 
+decente 
